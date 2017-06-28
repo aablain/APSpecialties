@@ -330,6 +330,9 @@ section#main-content {
       .aboutPage .main__content__reviews__review {
         width: 100%;
         max-width: 100%; }
+        .aboutPage .main__content__reviews__review h2 {
+          padding-left: 8px;
+          padding-right: 8px; }
         .aboutPage .main__content__reviews__review p:first-of-type {
           padding: 5px !important;
           font-size: 0.9rem; }
@@ -354,5 +357,75 @@ section#main-content {
   margin-bottom: 0px;
   margin-top: 0px;
   padding: 8px !important; }
+
+section.servicesPage .main__content * {
+  box-sizing: border-box; }
+section.servicesPage .main__content p {
+  padding: 8px !important;
+  margin-bottom: 0px; }
+section.servicesPage .main__content .listAndImage {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap; }
+  section.servicesPage .main__content .listAndImage__listBox {
+    width: 40%;
+    max-width: 40%;
+    flex-basis: 40%; }
+    section.servicesPage .main__content .listAndImage__listBox ul {
+      list-style-type: initial !important; }
+      section.servicesPage .main__content .listAndImage__listBox ul li {
+        list-style: circle !important;
+        display: block !important; }
+  section.servicesPage .main__content .listAndImage__imageBox {
+    width: 60%;
+    max-width: 60%;
+    flex-basis: 60%; }
+    section.servicesPage .main__content .listAndImage__imageBox img {
+      max-width: 100%; }
+section.servicesPage .main__content .imagesColumn {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  max-width: 675px;
+  flex-wrap: wrap; }
+  section.servicesPage .main__content .imagesColumn__box {
+    width: 50%;
+    max-width: 50%;
+    flex-basis: 50%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+    section.servicesPage .main__content .imagesColumn__box img {
+      max-width: 100%;
+      object-fit: contain;
+      align-self: flex-start; }
+    section.servicesPage .main__content .imagesColumn__box p {
+      width: 100%;
+      text-align: center;
+      background-color: #fdfdfd; }
+    section.servicesPage .main__content .imagesColumn__box.full {
+      width: 100%;
+      max-width: 100%;
+      flex-basis: 100%; }
+@media screen and (max-width: 600px) {
+  section.servicesPage .main__content .listAndImage__listBox {
+    width: 100%;
+    max-width: 100%;
+    flex-basis: 100%; }
+    section.servicesPage .main__content .listAndImage__listBox ul li {
+      text-align: center; }
+  section.servicesPage .main__content .listAndImage__imageBox {
+    width: 100%;
+    max-width: 100%;
+    flex-basis: 100%;
+    justify-content: center; }
+  section.servicesPage .main__content .imagesColumn__box {
+    width: 100%;
+    max-width: 100%;
+    flex-basis: 100%;
+    justify-content: center; } }
 
 /*# sourceMappingURL=master.css.map */

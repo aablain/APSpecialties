@@ -1,0 +1,93 @@
+
+section.servicesPage .main__content {
+  * {
+    box-sizing: border-box;
+  }
+  p {
+    padding: 8px !important;
+    margin-bottom: 0px;
+  }
+  .listAndImage {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    &__listBox {
+      width: 40%;
+      max-width: 40%;
+      flex-basis: 40%;
+      ul {
+        list-style-type: initial !important;
+        li {
+          list-style: circle !important;
+          display: block !important;
+        }
+      }
+    }
+    &__imageBox {
+      width: 60%;
+      max-width: 60%;
+      flex-basis: 60%;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+  .imagesColumn {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    max-width: 675px;
+    flex-wrap: wrap;
+    &__box {
+      width: 50%;
+      max-width: 50%;
+      flex-basis: 50%;
+      padding: 10px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      img {
+        max-width: 100%;
+        object-fit: contain;
+        align-self: flex-start;
+      }
+      p {
+        width: 100%;
+        text-align: center;
+        background-color: $lighter-grey;
+      }
+      &.full {
+        width: 100%;
+        max-width: 100%;
+        flex-basis: 100%;
+      }
+    }
+  }
+
+  @media #{$mobile} {
+    .listAndImage {
+      &__listBox {
+        width: 100%;
+        max-width: 100%;
+        flex-basis: 100%;
+        ul li {
+          text-align: center;
+        }
+      }
+      &__imageBox {
+        width: 100%;
+        max-width: 100%;
+        flex-basis: 100%;
+        justify-content: center;
+      }
+    }
+    .imagesColumn__box {
+      width: 100%;
+      max-width: 100%;
+      flex-basis: 100%;
+      justify-content: center;
+    }
+  }
+}
