@@ -2,7 +2,17 @@
 
 #main-content.locationsPage {
   box-sizing: border-box;
-
+  & > h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    max-width: 700px;
+    text-align: center;
+  }
+  iframe {
+    width: 425px;
+    height: 325px;
+  }
   .imageDirections {
     display: flex;
     flex-direction: row;
@@ -19,13 +29,17 @@
       flex-basis: 33%;
       img {
         max-width: 100%;
-        // border: 2px solid $dark;
       }
       p {
         padding: 8px !important;
         color: $dark-red;
         text-align: center;
       }
+    }
+  }
+  .main__content__callThisNumber {
+    h2, h4 {
+      text-align: center;
     }
   }
   @media #{$inbetween} {
@@ -38,6 +52,17 @@
         p {
           font-size: 1.2rem;
         }
+      }
+    }
+  }
+  @media #{$mobile} {
+    iframe {
+      width: 100%;
+      max-width: 100%;
+    }
+    .main__content__callThisNumber {
+      h2 {
+        font-size: 1.3rem;
       }
     }
   }

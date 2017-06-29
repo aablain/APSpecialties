@@ -422,6 +422,14 @@ section#main-content {
 
 #main-content.locationsPage {
   box-sizing: border-box; }
+  #main-content.locationsPage > h2 {
+    font-size: 2rem; }
+  #main-content.locationsPage h3 {
+    max-width: 700px;
+    text-align: center; }
+  #main-content.locationsPage iframe {
+    width: 425px;
+    height: 325px; }
   #main-content.locationsPage .imageDirections {
     display: flex;
     flex-direction: row;
@@ -442,6 +450,8 @@ section#main-content {
         padding: 8px !important;
         color: #88281D;
         text-align: center; }
+  #main-content.locationsPage .main__content__callThisNumber h2, #main-content.locationsPage .main__content__callThisNumber h4 {
+    text-align: center; }
   @media screen and (max-width: 650px) {
     #main-content.locationsPage .imageDirections {
       padding-top: 15px; }
@@ -451,6 +461,12 @@ section#main-content {
         flex-basis: 100%; }
         #main-content.locationsPage .imageDirections__box p {
           font-size: 1.2rem; } }
+  @media screen and (max-width: 600px) {
+    #main-content.locationsPage iframe {
+      width: 100%;
+      max-width: 100%; }
+    #main-content.locationsPage .main__content__callThisNumber h2 {
+      font-size: 1.3rem; } }
 
 section.servicesPage .main__content * {
   box-sizing: border-box; }
