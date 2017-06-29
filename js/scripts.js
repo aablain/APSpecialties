@@ -11,4 +11,11 @@ $(document).ready(function() {
       $(".second__content").removeClass("showing");
     }
   });
+  $("#menuToggle").click(function() {
+    if ($("#navBar").hasClass("showItems") === true) {
+      $("#navBar").removeClass("showItems");
+    } else {
+      $("#navBar").addClass("showItems");
+    }
+  });
 });

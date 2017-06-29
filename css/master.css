@@ -100,6 +100,40 @@ nav#navBar {
         color: #FFFFFF; }
         nav#navBar ul a li:hover {
           background-color: #88281D; }
+      nav#navBar ul a:first-of-type {
+        display: none; }
+  @media screen and (max-width: 700px) {
+    nav#navBar ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 0px; }
+      nav#navBar ul a {
+        text-align: center;
+        width: 100%;
+        flex-basis: 100%;
+        max-width: 100%;
+        padding: 6px; }
+        nav#navBar ul a li {
+          padding: 2px; }
+          nav#navBar ul a li:hover {
+            background-color: transparent; }
+        nav#navBar ul a:hover {
+          background-color: #88281D; }
+        nav#navBar ul a:first-of-type {
+          display: inline; }
+          nav#navBar ul a:first-of-type li {
+            font-size: 1.3rem;
+            padding: 8px 15px; }
+            nav#navBar ul a:first-of-type li:hover {
+              background-color: transparent; }
+        nav#navBar ul a:not(:first-of-type) {
+          display: none; } }
+
+@media screen and (max-width: 700px) {
+  .showItems ul a:not(:first-of-type) {
+    display: block !important; } }
 
 section#main-content {
   width: 100%;
@@ -385,6 +419,38 @@ section#main-content {
   margin-bottom: 0px;
   margin-top: 0px;
   padding: 8px !important; }
+
+#main-content.locationsPage {
+  box-sizing: border-box; }
+  #main-content.locationsPage .imageDirections {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 8px;
+    background-color: #d5d5d9; }
+    #main-content.locationsPage .imageDirections__box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 33%;
+      max-width: 33%;
+      flex-basis: 33%; }
+      #main-content.locationsPage .imageDirections__box img {
+        max-width: 100%; }
+      #main-content.locationsPage .imageDirections__box p {
+        padding: 8px !important;
+        color: #88281D;
+        text-align: center; }
+  @media screen and (max-width: 650px) {
+    #main-content.locationsPage .imageDirections {
+      padding-top: 15px; }
+      #main-content.locationsPage .imageDirections__box {
+        width: 100%;
+        max-width: 100%;
+        flex-basis: 100%; }
+        #main-content.locationsPage .imageDirections__box p {
+          font-size: 1.2rem; } }
 
 section.servicesPage .main__content * {
   box-sizing: border-box; }
