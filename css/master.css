@@ -420,6 +420,154 @@ section#main-content {
   margin-top: 0px;
   padding: 8px !important; }
 
+#main-content.appointmentPage {
+  box-sizing: border-box; }
+  #main-content.appointmentPage .main__content > h2:first-of-type {
+    padding-bottom: 30px; }
+  #main-content.appointmentPage p {
+    padding: 4px !important;
+    margin: 0px;
+    text-align: center; }
+  #main-content.appointmentPage .formLabel {
+    width: 100%;
+    padding: 10px;
+    background-color: #88281D;
+    color: #FFFFFF;
+    text-align: center; }
+  #main-content.appointmentPage form {
+    width: 100%;
+    max-width: 850px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid #88281D; }
+    #main-content.appointmentPage form .formBox {
+      width: 100%;
+      max-width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      padding-bottom: 10px; }
+      #main-content.appointmentPage form .formBox label {
+        width: 20%;
+        max-width: 20%;
+        flex-basis: 20%; }
+      #main-content.appointmentPage form .formBox input, #main-content.appointmentPage form .formBox .radioBox, #main-content.appointmentPage form .formBox textarea {
+        width: 70%;
+        max-width: 70%;
+        flex-basis: 70%;
+        font-size: 1.1rem;
+        padding: 5px; }
+        #main-content.appointmentPage form .formBox input:focus, #main-content.appointmentPage form .formBox .radioBox:focus, #main-content.appointmentPage form .formBox textarea:focus {
+          outline: none;
+          box-shadow: none;
+          border: 2px solid #88281D; }
+        #main-content.appointmentPage form .formBox input[type=radio], #main-content.appointmentPage form .formBox .radioBox[type=radio], #main-content.appointmentPage form .formBox textarea[type=radio] {
+          width: auto;
+          max-width: auto;
+          flex-basis: auto; }
+        #main-content.appointmentPage form .formBox input label, #main-content.appointmentPage form .formBox .radioBox label, #main-content.appointmentPage form .formBox textarea label {
+          width: 30%;
+          max-width: 30%;
+          flex-basis: 30%;
+          padding-right: 8px; }
+      #main-content.appointmentPage form .formBox textarea {
+        min-width: 70%; }
+    #main-content.appointmentPage form button {
+      font-size: 1.2rem;
+      padding: 8px 14px;
+      background-color: #88281D;
+      color: #FFFFFF;
+      border: none;
+      margin-top: 15px; }
+      #main-content.appointmentPage form button:hover {
+        cursor: pointer;
+        color: #d5d5d9; }
+      #main-content.appointmentPage form button:active, #main-content.appointmentPage form button:focus {
+        outline: none;
+        box-shadow: none; }
+  #main-content.appointmentPage .main__content__callThisNumber {
+    padding-top: 30px; }
+    #main-content.appointmentPage .main__content__callThisNumber h2, #main-content.appointmentPage .main__content__callThisNumber h4 {
+      text-align: center; }
+
+#main-content.contactPage {
+  box-sizing: border-box; }
+  #main-content.contactPage .main__content > h2:first-of-type, #main-content.contactPage .main__content > h4:first-of-type {
+    padding-bottom: 30px; }
+  #main-content.contactPage p {
+    padding: 4px !important;
+    margin: 0px;
+    text-align: center; }
+  #main-content.contactPage .formLabel {
+    width: 100%;
+    padding: 10px;
+    background-color: #88281D;
+    color: #FFFFFF;
+    text-align: center; }
+  #main-content.contactPage form {
+    width: 100%;
+    max-width: 850px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid #88281D; }
+    #main-content.contactPage form .formBox {
+      width: 100%;
+      max-width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      padding-bottom: 10px; }
+      #main-content.contactPage form .formBox label {
+        width: 20%;
+        max-width: 20%;
+        flex-basis: 20%; }
+      #main-content.contactPage form .formBox input, #main-content.contactPage form .formBox .radioBox, #main-content.contactPage form .formBox textarea {
+        width: 70%;
+        max-width: 70%;
+        flex-basis: 70%;
+        font-size: 1.1rem;
+        padding: 5px; }
+        #main-content.contactPage form .formBox input:focus, #main-content.contactPage form .formBox .radioBox:focus, #main-content.contactPage form .formBox textarea:focus {
+          outline: none;
+          box-shadow: none;
+          border: 2px solid #88281D; }
+        #main-content.contactPage form .formBox input[type=radio], #main-content.contactPage form .formBox .radioBox[type=radio], #main-content.contactPage form .formBox textarea[type=radio] {
+          width: auto;
+          max-width: auto;
+          flex-basis: auto; }
+        #main-content.contactPage form .formBox input label, #main-content.contactPage form .formBox .radioBox label, #main-content.contactPage form .formBox textarea label {
+          width: 30%;
+          max-width: 30%;
+          flex-basis: 30%;
+          padding-right: 8px; }
+      #main-content.contactPage form .formBox textarea {
+        min-width: 70%; }
+    #main-content.contactPage form button {
+      font-size: 1.2rem;
+      padding: 8px 14px;
+      background-color: #88281D;
+      color: #FFFFFF;
+      border: none;
+      margin-top: 15px; }
+      #main-content.contactPage form button:hover {
+        cursor: pointer;
+        color: #d5d5d9; }
+      #main-content.contactPage form button:active, #main-content.contactPage form button:focus {
+        outline: none;
+        box-shadow: none; }
+
 #main-content.locationsPage {
   box-sizing: border-box; }
   #main-content.locationsPage > h2 {
