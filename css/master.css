@@ -151,7 +151,8 @@ section#main-content {
     flex-direction: column;
     align-items: center;
     max-width: 1000px;
-    padding-top: 50px; }
+    padding-top: 50px;
+    animation: revealSlowly 2200ms ease-in-out; }
     section#main-content .main__content > h2, section#main-content .main__content > h4 {
       margin-top: 0px;
       margin-bottom: 0px; }
@@ -597,7 +598,8 @@ section#main-content {
       #main-content.locationsPage .imageDirections__box p {
         padding: 8px !important;
         color: #88281D;
-        text-align: center; }
+        text-align: center;
+        font-weight: bold; }
   #main-content.locationsPage .main__content__callThisNumber h2, #main-content.locationsPage .main__content__callThisNumber h4 {
     text-align: center; }
   @media screen and (max-width: 650px) {
