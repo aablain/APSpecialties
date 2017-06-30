@@ -1,6 +1,8 @@
 
 #main-content.porschePage {
   .main__content {
+    padding-left: 40px;
+    padding-right: 40px;
     & > img {
       max-width: 500px;
       min-width: 500px;
@@ -8,10 +10,13 @@
     }
     & > h3 {
       text-align: center;
+      max-width: 800px;
     }
   }
   @media #{$mobile} {
     .main__content {
+      padding-left: 10px;
+      padding-right: 10px;
       & > img {
         max-width: 100%;
         min-width: auto;
