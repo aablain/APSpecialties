@@ -1,0 +1,23 @@
+
+#main-content.porschePage {
+  .main__content {
+    & > img {
+      max-width: 500px;
+      min-width: 500px;
+      margin-bottom: 20px;
+    }
+    & > h3 {
+      text-align: center;
+    }
+  }
+  @media #{$mobile} {
+    .main__content {
+      & > img {
+        max-width: 100%;
+        min-width: auto;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

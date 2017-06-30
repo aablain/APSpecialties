@@ -1,0 +1,142 @@
+
+#main-content.vwPage, #main-content.audiPage, #main-content.porschePage {
+  box-sizing: border-box;
+  .main__content {
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+  .topBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 40px;
+    max-width: 800px;
+    p {
+      width: 60%;
+      max-width: 60%;
+      flex-basis: 60%;
+      padding: 4px !important;
+      margin: 0px;
+    }
+    img {
+      max-width: 40%;
+    }
+  }
+  .listAndImage {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    max-width: 800px;
+    &__listBox {
+      width: 40%;
+      max-width: 40%;
+      flex-basis: 40%;
+      ul {
+        list-style-type: initial !important;
+        li {
+          list-style: circle !important;
+          display: block !important;
+        }
+      }
+    }
+    &__imageBox {
+      width: 60%;
+      max-width: 60%;
+      flex-basis: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+  .imageAndText {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 800px;
+    &__imageBox {
+      width: 50%;
+      max-width: 50%;
+      flex-basis: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      img {
+        max-width: 100%;
+      }
+    }
+    &__textBox {
+      width: 50%;
+      max-width: 50%;
+      flex-basis: 50%;
+      p {
+        padding: 4px !important;
+        margin: none;
+      }
+    }
+  }
+  @media #{$mobile} {
+    .topBox {
+      p {
+        width: 100%;
+        max-width: 100%;
+        flex-basis: 100%;
+        order: 2;
+        padding: 40px 10px 0px !important;
+      }
+      img {
+        order: 1;
+      }
+    }
+    .listAndImage {
+      &__listBox {
+        width: 100%;
+        max-width: 100%;
+        flex-basis: 100%;
+        ul {
+          padding-left: 0px;
+          li {
+            text-align: center;
+            font-weight: bold;
+            padding-bottom: 2px;
+            padding-top: 2px;
+            &:nth-of-type(2n) {
+              background-color: $inbetween-grey;
+            }
+          }
+        }
+      }
+      &__imageBox {
+        width: 100%;
+        max-width: 100%;
+        flex-basis: 100%;
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+      }
+    }
+    .imageAndText {
+      &__imageBox {
+        width: 100%;
+        max-width: 100%;
+        flex-basis: 100%;
+        order: 2;
+      }
+      &__textBox {
+        width: 100%;
+        max-width: 100%;
+        flex-basis: 100%;
+        order: 1;
+        padding: 20px 10px !important;
+      }
+    }
+  }
+}
