@@ -156,6 +156,8 @@ section#main-content {
     section#main-content .main__content > h2, section#main-content .main__content > h4 {
       margin-top: 0px;
       margin-bottom: 0px; }
+    section#main-content .main__content > h2:first-of-type {
+      text-align: center; }
     section#main-content .main__content p {
       width: 90%;
       max-width: 850px;
@@ -675,8 +677,15 @@ section.servicesPage .main__content .imagesColumn {
     width: 100%;
     max-width: 100%;
     flex-basis: 100%; }
-    section.servicesPage .main__content .listAndImage__listBox ul li {
-      text-align: center; }
+    section.servicesPage .main__content .listAndImage__listBox ul {
+      padding-left: 0px; }
+      section.servicesPage .main__content .listAndImage__listBox ul li {
+        text-align: center;
+        font-weight: bold;
+        padding-bottom: 2px;
+        padding-top: 2px; }
+        section.servicesPage .main__content .listAndImage__listBox ul li:nth-of-type(2n) {
+          background-color: #F8F9F9; }
   section.servicesPage .main__content .listAndImage__imageBox {
     width: 100%;
     max-width: 100%;

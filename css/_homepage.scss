@@ -176,6 +176,9 @@ section#main-content {
       margin-top: 0px;
       margin-bottom: 0px;
     }
+    & > h2:first-of-type {
+      text-align: center;
+    }
     p {
       width: 90%;
       max-width: 850px;
