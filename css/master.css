@@ -42,14 +42,30 @@ a {
     text-decoration: underline;
     cursor: pointer; }
 
+#contentRounded {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -100px;
+  border-radius: 8px;
+  border: 10px solid #8d9797;
+  overflow: hidden; }
+
+#slideShow {
+  padding-bottom: 0px;
+  max-height: 130px; }
+  #slideShow img {
+    margin-bottom: 0px;
+    max-width: 100%;
+    min-height: 100%; }
+
 #navigation {
   border-bottom: 5px solid #88281D;
   background: linear-gradient(#d5d5d9, #fdfdfd, #d5d5d9);
-  min-height: 150px; }
+  min-height: 150px;
+  padding-bottom: 100px; }
 
 #footer {
-  border-top: 5px solid #88281D;
-  background: linear-gradient(#d5d5d9, #fdfdfd, #d5d5d9);
   padding: 10px;
   text-align: center;
   font-size: 14px;
@@ -57,6 +73,8 @@ a {
   flex-direction: column;
   align-items: center;
   min-height: 100px; }
+  #footer p:first-of-type {
+    margin-bottom: 0px; }
 
 #nav-content {
   display: flex;
@@ -326,6 +344,50 @@ section#main-content {
     section#main-content .second__content img {
       max-width: 60%;
       margin-top: 5px; } }
+
+section#subFooter {
+  background-color: #88281D;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  section#subFooter ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+    section#subFooter ul li {
+      list-style: none;
+      padding-right: 6px; }
+      section#subFooter ul li:not(:first-of-type) {
+        border-left: 1px solid #FFFFFF;
+        padding-left: 6px; }
+      section#subFooter ul li a {
+        color: #FFFFFF; }
+    section#subFooter ul:first-of-type {
+      padding-left: 10px;
+      max-width: 555px; }
+    section#subFooter ul:last-of-type {
+      padding-left: 0px;
+      max-width: 200px; }
+  @media screen and (max-width: 800px) {
+    section#subFooter {
+      justify-content: center; }
+      section#subFooter ul {
+        width: 100%;
+        flex-basis: 100%;
+        justify-content: center;
+        padding-top: 10px;
+        padding-bottom: 10px; }
+        section#subFooter ul:first-of-type {
+          padding-bottom: 0px; } }
+  @media screen and (max-width: 600px) {
+    section#subFooter {
+      font-size: 0.7rem; } }
 
 @media screen and (max-width: 600px) {
   #nav-content {
